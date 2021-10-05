@@ -1,0 +1,159 @@
+#app {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#app .container {
+  width: 376px;
+  height: 666px;
+  z-index: 100;
+
+  background: #fbfbfa;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  overflow: hidden;
+  color: #4b4b4b;
+  font-family: "Century Gothic" !important;
+}
+
+#app .container-view {
+  user-select: none;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav button {
+  background-color: transparent;
+  padding: 5px;
+  width: 50%;
+  margin: 5px;
+}
+
+button, button:focus {
+  outline: none;
+  border: none;
+  color: #4b4b4b;
+  font-family: "Century Gothic" !important;
+  font-weight: bold;
+}
+
+.activeTab {
+  color: #f24c1d !important;
+}
+
+.activity {
+  background-color: white;
+  border-radius: 4px;
+  border:1px solid rgba(0, 0, 0, .1);
+  display: flex;
+  margin: 15px 0;
+  flex-direction: row;
+  align-items: space-between;
+  width: 100%;
+}
+
+.activity div:nth-child(1) {
+  width: 3%;
+}
+
+.activity div:nth-child(2) {
+  width: 72%;
+}
+
+.activity div:nth-child(3) {
+  text-align: right;
+  width: 25%;
+  font-weight: bold;
+}
+
+.activity div {
+  pointer-events: none;
+  margin: 12px;
+}
+
+.date {
+  text-align: center;
+  width: 100%;
+}
+
+.details, .details div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.details div {
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 4px;
+  border:1px solid rgba(0, 0, 0, .1);
+  padding: 15px 0;
+}
+
+.details h1 {
+  font-size: 2.0em;
+  margin-top: 10px;
+}
+
+.details h2 {
+  font-size: 1.25em;
+}
+
+.details button {  
+  background-color: #3bb81f;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  width: 90%;
+}
+
+.archiveAll {
+  background-color: #3bb81f;
+  color: white;
+  padding: 10px;
+  margin: 15px 0;
+  width: 100%;
+  border-radius: 3px;
+}
+
+img {  
+  -webkit-user-drag: none;
+}
+
+#extra-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#extra-details div {
+  background-color: transparent;
+  border: none;
+  width: auto;
+  text-transform: uppercase;
+}
+
+#extra-details img {
+  margin-bottom: 5px;
+}
